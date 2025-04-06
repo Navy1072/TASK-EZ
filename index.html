@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Style Carousel</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+      <div style="text-align: center; margin-top: 5%;">
+        <h1 style="color: #fff; font-size: 25px; margin-bottom: 5%;">70+ Offerings that allow you to Focus on your core tasks</h1>
+    </div>
+
+    <!-- Service Lines -->
+    
+      <!-- carousel -->
+  <div class="carousel">
+    <div class="carousel-track" id="carouselTrack">
+      <div class="card"><i class="fa-brands fa-figma"></i><h2>UI/UX Design</h2><p>Designing modern interfaces.</p></div>
+      <div class="card"><i class="fa-solid fa-code"></i><h2>Frontend</h2><p>Building responsive websites.</p></div>
+      <div class="card"><i class="fa-solid fa-vial"></i><h2>Testing</h2><p>Ensuring quality and stability.</p></div>
+      <div class="card"><i class="fa-solid fa-database"></i><h2>Database</h2><p>Handling data efficiently.</p></div>
+      <div class="card"><i class="fa-solid fa-cloud"></i><h2>Cloud Basics</h2><p>Scalable cloud knowledge.</p></div>
+      <div class="card"><i class="fa-solid fa-people-group"></i><h2>Team Work</h2><p>Collaborating effectively.</p></div>
+      <div class="card"><i class="fa-solid fa-terminal"></i><h2>Command Line</h2><p>Mastering terminal operations.</p></div>
+      <div class="card"><i class="fa-solid fa-shield-halved"></i><h2>Security</h2><p>Keeping apps safe and secure.</p></div>
+      <div class="card"><i class="fa-solid fa-network-wired"></i><h2>Networking</h2><p>Understanding data flow.</p></div>
+      <div class="card"><i class="fa-solid fa-laptop-code"></i><h2>DSA</h2><p>Cracking algorithms efficiently.</p></div>
+      <div class="card"><i class="fa-solid fa-gears"></i><h2>DevOps</h2><p>Bridging dev and ops smoothly.</p></div>
+      <div class="card"><i class="fa-solid fa-brain"></i><h2>Machine Learning</h2><p>Teaching machines smart stuff.</p></div>
+      <div class="card"><i class="fa-solid fa-chart-line"></i><h2>Analytics</h2><p>Reading data insights clearly.</p></div>
+      <div class="card"><i class="fa-solid fa-mobile-screen"></i><h2>Mobile Dev</h2><p>Crafting responsive apps.</p></div>
+      <div class="card"><i class="fa-solid fa-language"></i><h2>Multilingual</h2><p>Global-ready applications.</p></div>
+    </div>
+  </div>
+  <!-- Indicators -->
+  <div class="indicators" id="indicators"></div>
+
+  <!-- Form -->
+
+  <!-- Trigger Button -->
+  <div style="margin-top: 2%;">
+      <p style="font-weight: 500; color: #fff;">Send us your requirements, and get a response within 10 minutes</p>
+  </div>
+  <div>
+      <button id="openFormBtn" class="get-in-touch-btn">Get in Touch</button>
+  </div>
+  
+
+  <!-- Modal Form Overlay -->
+  <div class="modal-overlay" id="formModal">
+      <div class="modal-bg-image"></div>
+      <div class="modal-content">
+          <span class="close-btn" id="closeFormBtn">&times;</span>
+          <h2>Get in Touch</h2>
+          <form id="contactForm">
+              <input type="text" placeholder="Your Name" name="name" required />
+              <input id="phone" type="tel" name="phone" placeholder="Phone Number" required />
+              <input type="email" placeholder="Email Address" name="email" required style="margin-top: 3%;"/>
+
+              <select name="service" required>
+                  <option value="" disabled selected>Select a Service</option>
+                  <option>Language Services</option>
+                  <option>Communication Coaching</option>
+                  <option>Business Writing</option>
+                  <option>Empathy Mapping</option>
+                  <option>Digital Safety</option>
+                  <option>Cloud Basics</option>
+              </select>
+
+              <textarea name="message" placeholder="Your Message" rows="4"></textarea>
+              <button type="submit">Submit</button>
+          </form>
+      </div>
+  </div>
+
+  <!-- USP -->
+   <h1 style="color: #fff;">USP Section</h1>
+  <div class="usp-section">
+      <div class="left-panel">
+          <h2>Work starts within 30 minutes of your Request<br>Round the Clock!</h2>
+          <div class="timeline">
+              <div class="timeline-item">
+                  <span class="time">10</span>
+                  <div class="box">Receive a Confirmation Email</div>
+              </div>
+              <div class="timeline-item">
+                  <span class="time">20</span>
+                  <div class="box">Subject Matter Experts Allocated for Assignment</div>
+              </div>
+              <div class="timeline-item">
+                  <span class="time">30</span>
+                  <div class="box">Assignment Starts</div>
+              </div>
+          </div>
+      </div>
+      <div class="divider"></div>
+      <div class="right-panel">
+          <div class="flip-card">
+              <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                      <h3>Consistently High Quality</h3>
+                  </div>
+                  <div class="flip-card-back">
+                      <p>We ensure exceptional quality by adhering to top standards and continuous improvements.</p>
+                      <button
+                          onclick="showOverlay('Consistently High Quality', 'Technology has brought us to the threshold of a variety of high-quality services. However, as a team of ex-consultants from top consulting firms, we have constantly found...')">Read
+                          More</button>
+                  </div>
+              </div>
+          </div>
+          <div class="flip-card">
+              <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                      <h3>Round the Clock Availability</h3>
+                  </div>
+                  <div class="flip-card-back">
+                      <p>Our team works 24/7 to ensure your queries and tasks are never delayed.</p>
+                      <button
+                          onclick="showOverlay('Round the Clock Availability', 'We are available 24/7 to respond to your urgent needs and assignments.')">Read
+                          More</button>
+                  </div>
+              </div>
+          </div>
+          <div class="flip-card">
+              <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                      <h3>Faster than the Fastest</h3>
+                  </div>
+                  <div class="flip-card-back">
+                      <p>Delivering your assignments faster than ever without compromising quality.</p>
+                      <button
+                          onclick="showOverlay('Faster than the Fastest', 'Our turnaround time is optimized for speed without compromising on quality.')">Read
+                          More</button>
+                  </div>
+              </div>
+          </div>
+          <div class="flip-card">
+              <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                      <h3>Information Security</h3>
+                  </div>
+                  <div class="flip-card-back">
+                      <p>We follow strict security protocols and ISO standards to keep your data safe.</p>
+                      <button
+                          onclick="showOverlay('Information Security', 'We ensure the highest level of information security, including ISO certifications.')">Read
+                          More</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="overlay" id="overlay">
+      <div class="overlay-content">
+          <h3 id="overlay-title"></h3>
+          <p id="overlay-description"></p>
+          <button class="close-overlay" onclick="closeOverlay()">Close</button>
+      </div>
+  </div>
+
+
+
+
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+
+<script>
+const phoneInputField = document.querySelector("#phone");
+const iti = window.intlTelInput(phoneInputField, {
+  initialCountry: "in", // default to India (change if needed)
+  separateDialCode: true,
+  utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js",
+});
+
+// Optional: on form submit, get the full number
+document.querySelector("form")?.addEventListener("submit", function (e) {
+  const fullNumber = iti.getNumber();
+  alert("Full phone number: " + fullNumber);
+  // You can send fullNumber to your server
+  e.preventDefault(); // remove this line in production
+});
+</script>
+<!-- For emailjs configuration -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+(function(){
+  emailjs.init("o-GwLKVEImnbGsoBg"); // Replace with your Public Key
+})();
+</script>
+
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    emailjs.sendForm("service_2ivrz7m", "template_7hsa21i", this)
+      .then(function () {
+        alert("Message sent successfully!");
+        document.getElementById("contact-form").reset();
+      }, function (error) {
+        alert("Failed to send message. Please try again!");
+        console.log(error);
+      });
+  });
+</script>
+
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+</body>
+</html>
